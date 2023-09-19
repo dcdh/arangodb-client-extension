@@ -19,6 +19,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.version>3.3.3</quarkus.version>
     <surefire-plugin.version>3.0.0</surefire-plugin.version>
+    <arangodb-java-driver.version>7.1.0</arangodb-java-driver.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -28,6 +29,11 @@
         <version>${quarkus.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.arangodb</groupId>
+        <artifactId>arangodb-java-driver</artifactId>
+        <version>${arangodb-java-driver.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
